@@ -18,22 +18,35 @@ window.addEventListener("scroll", () => {
       "backdrop-blur-lg",
       "shadow-sm"
     );
-    navLinks.classList.remove(
-        "bg-white",
-        "shadow-sm",
-        "bg-opacity-50"
-    )
-} else {
+    navLinks.classList.remove("bg-white", "shadow-sm", "bg-opacity-50");
+  } else {
     navbar.classList.remove(
-        "bg-white",
-        "bg-opacity-50",
-        "backdrop-blur-lg",
-        "shadow-sm"
+      "bg-white",
+      "bg-opacity-50",
+      "backdrop-blur-lg",
+      "shadow-sm"
     );
-    navLinks.classList.add(
-        "bg-white",
-        "shadow-sm",
-        "bg-opacity-50"
-    )
-}
+    navLinks.classList.add("bg-white", "shadow-sm", "bg-opacity-50");
+  }
 });
+
+// ---------- Light mode and Dark mode -------------
+
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
+function toggleTheme() {
+  (document.documentElement.classList.toggle("dark"))
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.theme = "dark";
+  } else {
+    localStorage.theme = "light";
+  }
+}
