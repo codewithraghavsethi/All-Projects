@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #219EBC;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+
+.passwordBox {
+  width: 400px;
+  /* height: 400px; */
+  background-color: #023047;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.passwordBoxIn {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+}
+
+.passwordBox h2 {
+  text-decoration: underline;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.passwordBoxIn input {
+  flex-basis: 80%;
+  border-radius: 10px;
+  outline: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.passwordBoxIn button {
+  flex-basis: 20%;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #8ECAE6;
+}
+
+.passwordLength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 10px;
+  margin: 30px 10px;
+  font-size: 20px;
+}
+
+.passwordLength label {
+  flex-basis: 80%;
+  text-align: left;
+
+}
+
+.passwordLength input {
+  flex-basis: 20%;
+  padding: 5px;
+  outline: none;
+
+}
+
+.passwordLength input[type="checkbox"] {
+  height: 20px;
+}
+
+.passwordLength input[type="number"] {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #8ECAE6;
 }
