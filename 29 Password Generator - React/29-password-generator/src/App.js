@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import { UC, LC, NC, SC } from "./data/PassChar";
