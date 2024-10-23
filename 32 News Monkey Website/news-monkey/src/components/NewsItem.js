@@ -8,11 +8,11 @@ export default class NewsItem extends Component {
     let { title, description, imageUrl, newsUrl } = this.props;
     return (
       <div className="container my-3">
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={imageUrl} />
+        <Card style={{ width: "18rem", height: "420px"}}  >
+          <Card.Img variant="top" src={imageUrl} style={{height: "250px"}} />
           <Card.Body>
-            <Card.Title>{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            <Card.Title>{title}.....</Card.Title>
+            <Card.Text>{description}.....</Card.Text>
             <Button variant="primary" href={newsUrl} target="_blank">Read More</Button>
           </Card.Body>
         </Card>

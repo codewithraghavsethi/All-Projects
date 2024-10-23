@@ -107,7 +107,7 @@ export default class News extends Component {
       "url": "https://www.phonearena.com/news/samsungs-galaxy-z-fold-special-edition-price-specs_id163935",
       "urlToImage": "https://m-cdn.phonearena.com/images/article/163935-wide-two_1200/Samsung-Galaxy-Z-Fold-Special-Edition-is-out-with-2000-price-and-200MP-camera.jpg",
       "publishedAt": "2024-10-21T07:07:08Z",
-      "content": "Enjoy the hottest mobile tech storylines, delivered straight to your inbox."
+      "content": "Enjoy`` the hottest mobile tech storylines, delivered straight to your inbox."
   },
   ];
   constructor() {
