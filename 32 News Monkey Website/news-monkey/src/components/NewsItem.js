@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 export default class NewsItem extends Component {
   
-  render() {
+  render( ){
     let { title, description, imageUrl, newsUrl } = this.props;
     return (
       <div className="container my-3">
@@ -13,7 +13,7 @@ export default class NewsItem extends Component {
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>{description}</Card.Text>
-            <Button variant="primary">Read More</Button>
+            <Button variant="primary" href={newsUrl} target="_blank">Read More</Button>
           </Card.Body>
         </Card>
       </div>
