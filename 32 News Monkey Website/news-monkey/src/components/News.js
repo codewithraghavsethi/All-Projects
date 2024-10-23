@@ -103,16 +103,19 @@ export default class News extends Component {
     return (
       <div className="container my-3">
         <h1>News Monkey - Headlines News Morning Express.</h1>
-         {this.state.articles.map((element)=>{console.log(element)})}
         <div className="row">
-          <div className="col-md-3">
-            <NewsItem
-              title="My Raghav"
-              description="hello ji"
-              imageUrl="https://thumbs.dreamstime.com/b/tree-growing-out-open-book-tree-surrounded-moss-leaves-book-open-to-page-tree-333450125.jpg"
-              newsUrl="Todo"
-            />
-          </div>
+          {this.state.articles.map((element) => {
+            return;
+            <div className="col-md-3">
+              <NewsItem
+                key={element.url}
+                title={element.title}
+                description={element.description}
+                imageUrl={element.urlToImage}
+                newsUrl="Todo"
+              />
+            </div>;
+          })}
         </div>
       </div>
     );
