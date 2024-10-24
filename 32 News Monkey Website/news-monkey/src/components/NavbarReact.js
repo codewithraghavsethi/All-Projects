@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavbarReact() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
         <Navbar.Brand href="#">News Monkey</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
