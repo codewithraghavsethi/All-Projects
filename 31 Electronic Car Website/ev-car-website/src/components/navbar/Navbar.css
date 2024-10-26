@@ -23,3 +23,10 @@
 .nav-menu li{
     cursor: pointer;
 }
+
+.nav-contact{
+    border-radius: 50px;
+    background-color: white;
+    color: #262626;
+    padding: 10px 38px; 
+}
